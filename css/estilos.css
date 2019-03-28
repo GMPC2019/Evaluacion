@@ -1,0 +1,222 @@
+body{
+    background: #02010a;;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#contenido{
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+/*-------------- ESTO ES PARA EL ENCABEZADO----------*/
+#encabezado{
+
+    width: 100%;
+    color: white;
+    background: #5b7989;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    animation: Animacion 2s;
+}
+#titulo{
+    text-shadow: 2px 2px 2px #02010a;
+    display: inline-block;
+    width: 50%;
+    vertical-align: center;
+    float: left;
+    
+   
+}
+#titulo h1{
+    padding-left: 2%;
+}
+
+
+
+
+nav{
+    width: 50%;
+    vertical-align: center;
+    padding-top: 2%
+}
+
+nav ul li{
+    display: inline-block;
+    float: right;
+    padding-right: 7%;
+    
+} 
+
+.menu-link{
+    color: white;
+}
+
+
+
+
+#actual{
+    text-decoration: none;
+}
+
+/*--------------ESTO ES PARA LAS SECCIONES-------------------*/
+section{
+    display: flex;
+    flex-flow: row wrap;
+}
+section img{
+    display: block;
+    margin: 0 auto;
+    
+}
+#ImagenCentral{
+    background: #82c3a6;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#ImagenCentral img{
+  width: 70%;
+  height: 70%;
+
+}
+#ImagenSecundaria{
+    background: #d5c75f;
+    widows: 100%;
+}
+#paisajes, #retratos{
+    width: 46%;
+    padding: 15px;
+    text-align: center;
+}
+#paisajes img, #retratos img{
+  
+    transition: transform 2s;
+}
+#paisajes img:hover{
+transform: rotate(10deg);
+-webkit-transform:rotate(10deg);
+box-shadow: 2px 2px 2px #82c3a6;
+}
+#retratos img:hover{
+    transform: translate(20px,-5px);
+    -webkit-transform:translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+#ImagenSecundaria a{
+    color: black;
+}
+
+/*----------ESTO ES PARA EL FOOTER-------------*/
+footer{
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 20px;
+    padding-top: 0;
+}
+.contacto a{
+    color:black;
+}
+.contacto, .terminos, .redes, .derechos {
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.redes a{
+    color: black;
+    text-decoration: none; 
+}
+
+/*------------------------------------------*/
+
+#galeria{
+    width: 100%;
+    background: #d5c75f;
+    height: 100%;
+}
+#division1, #division2, #division3, #division4, #division5, #division6 {
+    width: 30.55%;
+    height: 33.3%;
+    text-align: center;
+    padding-left: 17px;
+    
+
+    }
+img{
+    box-shadow: 2px 2px 2px #02010a;
+}
+}
+#img1{
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+#img2, #img4, #img6{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#img3{
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+}
+@keyframes Animacion {
+    0%{
+        margin-top: 150%;
+     }
+    60%{
+        margin-top: -5%;
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+@media all and (max-width: 899px){
+    #contenido{
+      width: 100%;
+    }
+    #encabezado{
+      width: 100%;
+      flex-direction: column;
+    }
+    #titulo {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+      }
+  
+      nav{
+          width: 100%;
+      }
+     nav ul{
+         padding-right: 25%;
+         padding-bottom: 10%;
+     }
+     .menu-link{
+         font-size: 25px;
+     }
+
+    #paisajes, #retratos{
+            width: 100%;
+            }
+    .contacto, .terminos, .redes, .derechos {
+      width: 100%;
+      padding: 20px;
+            }
+     #galeria {
+            width: 100%;
+          }
+    #division1, #division2, #division3, #division4, #division5, #division6 {
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+        }
